@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
+import { useData } from "vitepress";
+import PageHeader from "./components/PageHeader.vue";
 
 // https://vitepress.dev/reference/runtime-api#usedata
-const { site, frontmatter } = useData()
+const { site, frontmatter } = useData();
 </script>
 
 <template>
   <div v-if="frontmatter.home">
+    <PageHeader :title="site.title" :subTitle="site.description" />
     <h1 class="underline">{{ site.title }}</h1>
     <p>{{ site.description }}</p>
     <ul>
