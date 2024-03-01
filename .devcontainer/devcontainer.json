@@ -12,7 +12,8 @@
 			"extensions": [
 				"Vue.vscode-typescript-vue-plugin",
 				"Vue.volar",
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"github.vscode-github-actions"
 			]
 		}
 	}
