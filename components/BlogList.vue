@@ -6,7 +6,7 @@
           Thoughtful Coding
         </h2>
         <p class="mt-2 text-lg leading-8 text-gray-600">
-          Thoughts on life and work.
+          on life and work.
         </p>
         <div
           class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16"

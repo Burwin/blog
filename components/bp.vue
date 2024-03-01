@@ -1,0 +1,5 @@
+<template>
+  <p class="mt-8">
+    <slot />
+  </p>
+</template>
