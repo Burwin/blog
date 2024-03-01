@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ba } from "../elements";
 defineProps<{
   quote: string;
   name: string;
