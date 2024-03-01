@@ -18,7 +18,7 @@
           >
             <div class="flex items-center gap-x-4 text-xs">
               <time :datetime="post.date.toLocaleDateString()" class="text-gray-500">{{
-                post.date
+                post.date.toLocaleDateString()
               }}</time>
             </div>
             <div class="group relative">
