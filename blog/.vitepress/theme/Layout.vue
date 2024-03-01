@@ -4,6 +4,8 @@ import PageHeader from "./components/PageHeader.vue";
 import PostCardContainer from "./components/PostCardContainer.vue";
 import PostCard from "./components/PostCard.vue";
 
+import posts from "../../data.json";
+
 // https://vitepress.dev/reference/runtime-api#usedata
 const { site, frontmatter } = useData();
 </script>
@@ -13,11 +15,11 @@ const { site, frontmatter } = useData();
     <PageHeader :title="site.title" :subTitle="site.description" />
     <PostCardContainer>
       <PostCard
-        v-for="post in frontmatter.posts"
+        v-for="post in posts"
         :key="post.title"
         :date="new Date(post.date)"
         :title="post.title"
-        :description="post.description"
+        :description="post.excerpt"
         :href="post.path"
       />
     </PostCardContainer>
