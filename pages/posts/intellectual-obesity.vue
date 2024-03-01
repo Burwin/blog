@@ -13,8 +13,8 @@ const post = {
 <template>
   <BlogPost
     :date="new Date(post.date)"
-    title="{{ post.title }}"
-    excerpt="{{ post.excerpt }}"
+    :title="post.title"
+    :excerpt="post.excerpt"
   >
     <bp> Eating food is good. </bp>
     <bp>
