@@ -31,10 +31,8 @@ const post = {
     <bquote
       quote="Here's something that's even more cool: the food that's stable across the entire domain of food isn't food: it's information. It's information, and we use the same bloody circuits in our brain to forage for information that animals use to forage for food. It's the same circuit. Why is that? Because we figured out that knowing where the food is is more important than having the food. Knowing where the food is is a form of meta-food—information is a form of meta food, and that's why we're information foragers. That idea is embedded into the story of Adam and Eve: whatever it is that they ingest is a form of meta food. It's information."
       name="Jordan Peterson"
-      :context="{
-        text: 'Biblical Series IV',
-        url: 'https://www.jordanbpeterson.com/transcripts/biblical-series-iv/',
-      }"
+      contextText="Biblical Series IV"
+      contextUrl="https://www.jordanbpeterson.com/transcripts/biblical-series-iv/"
     >
     </bquote>
     <bp>

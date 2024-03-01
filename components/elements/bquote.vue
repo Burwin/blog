@@ -2,10 +2,8 @@
 defineProps<{
   quote: string;
   name: string;
-  context?: {
-    text?: string;
-    url?: string;
-  };
+  contextText?: string;
+  contextUrl?: string;
 }>();
 </script>
 
@@ -17,14 +15,14 @@ defineProps<{
     <figcaption class="mt-6 flex gap-x-4">
       <div class="text-sm leading-6">
         <strong class="font-semibold text-gray-900">{{ name }}</strong>
-        <template v-if="context && context.text && !context.url">
-          – {{ context.text }}
+        <template v-if="contextText && !contextUrl">
+          - {{ contextText }}
         </template>
-        <template v-else-if="context && context.text && context.url">
-          <ba :href="context.url"> - {{ context.text }}</ba>
+        <template v-else-if="contextText && contextUrl">
+          <ba :href="contextUrl"> - {{ contextText }}</ba>
         </template>
-        <template v-else-if="context && !context.text && context.url">
-          <ba :href="context.url"> - {{ context.url }}</ba>
+        <template v-else-if="!contextText && contextUrl">
+          <ba :href="contextUrl"> - {{ contextUrl }}</ba>
         </template>
       </div>
     </figcaption>
