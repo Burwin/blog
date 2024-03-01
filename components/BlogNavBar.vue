@@ -37,10 +37,17 @@ import { useRoute } from "vue-router";
 
 const route = useRoute();
 
+// figure out how far back the /posts/ route is
+const routeLookback = route.path
+  .split("/")
+  .filter(Boolean)
+  .map((_) => "..")
+  .join("/");
+
 const pages = [
   {
     name: route.path.split("/").filter(Boolean).pop(),
-    href: route.fullPath,
+    href: `${routeLookback}${route.fullPath}`,
     current: true,
   },
 ];
