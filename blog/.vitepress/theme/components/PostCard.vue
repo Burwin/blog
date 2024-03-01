@@ -18,7 +18,7 @@ defineProps({
       <h3
         class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
       >
-        <a :href="href" class="hover:cursor-pointer">
+        <a :href="href" class="hover:cursor-pointer" target="_self">
           <span class="absolute inset-0" />
           {{ title }}
         </a>
