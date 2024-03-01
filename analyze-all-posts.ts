@@ -26,7 +26,7 @@ fs.readdir("./pages/posts", (err, files) => {
         date: new Date(dateMatch[1]),
         title: titleMatch[1],
         description: excerptMatch[1],
-        href: `/blog/posts/${file.replace(/\.vue$/, "")}`,
+        href: `posts/${file.replace(/\.vue$/, "")}`,
         id: file.replace(/\.vue$/, ""),
       });
     }
