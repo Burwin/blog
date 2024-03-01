@@ -5,9 +5,7 @@
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Thoughtful Coding
         </h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">
-          on life and work.
-        </p>
+        <p class="mt-2 text-lg leading-8 text-gray-600">on life and work.</p>
         <div
           class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16"
         >
@@ -17,9 +15,11 @@
             class="flex max-w-xl flex-col items-start justify-between"
           >
             <div class="flex items-center gap-x-4 text-xs">
-              <time :datetime="post.date.toLocaleDateString()" class="text-gray-500">{{
-                post.date.toLocaleDateString()
-              }}</time>
+              <time
+                :datetime="format(post.date, 'yyyy-MM-dd')"
+                class="text-gray-500"
+                >{{ format(post.date, "yyyy-MM-dd") }}</time
+              >
             </div>
             <div class="group relative">
               <h3
@@ -42,7 +42,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Post } from '~/post';
+import type { Post } from "~/post";
+import { format } from "date-fns";
 
 defineProps<{
   posts: Post[];
