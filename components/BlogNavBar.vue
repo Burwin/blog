@@ -37,15 +37,10 @@ import { useRoute } from "vue-router";
 
 const route = useRoute();
 
-// home path is everything before /posts
-const pathTokens = route.path.split("/");
-const hometokens = pathTokens.slice(0, pathTokens.indexOf("posts") + 1);
-const homePath = hometokens.join("/");
-
 const pages = [
   {
     name: route.path.split("/").filter(Boolean).pop(),
-    href: route.path,
+    href: route.fullPath,
     current: true,
   },
 ];
