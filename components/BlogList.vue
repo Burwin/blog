@@ -17,7 +17,7 @@
             class="flex max-w-xl flex-col items-start justify-between"
           >
             <div class="flex items-center gap-x-4 text-xs">
-              <time :datetime="post.datetime" class="text-gray-500">{{
+              <time :datetime="post.date.toLocaleDateString()" class="text-gray-500">{{
                 post.date
               }}</time>
             </div>
@@ -42,14 +42,9 @@
 </template>
 
 <script setup lang="ts">
+import type { Post } from '~/post';
+
 defineProps<{
-  posts: {
-    id: number;
-    title: string;
-    href: string;
-    description: string;
-    date: string;
-    datetime: string;
-  }[];
+  posts: Post[];
 }>();
 </script>

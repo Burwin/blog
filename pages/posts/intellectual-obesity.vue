@@ -1,13 +1,20 @@
 <script setup lang="ts">
 import BlogPost from "../../components/BlogPost.vue";
 import { bp, ba, bquote } from "../../components/elements";
+
+const post = {
+  date: "2020-02-07",
+  title: "Intellectual Obesity",
+  excerpt:
+    "Throughout life, one of my greatest character struggles has been converting knowledge into productivity. This blog is part of my attempt to burn off the fact-fat into chiseled apps and a more powerful bench(mark).",
+};
 </script>
 
 <template>
   <BlogPost
-    :date="new Date('2020-02-07')"
-    title="Intellectual Obesity"
-    excerpt="Throughout life, one of my greatest character struggles has been converting knowledge into productivity. This blog is part of my attempt to burn off the fact-fat into chiseled apps and a more powerful bench(mark)."
+    :date="new Date(post.date)"
+    title="{{ post.title }}"
+    excerpt="{{ post.excerpt }}"
   >
     <bp> Eating food is good. </bp>
     <bp>

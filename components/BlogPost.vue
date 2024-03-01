@@ -24,10 +24,3 @@ defineProps<{
     </div>
   </div>
 </template>
-
-<script setup>
-import {
-  CheckCircleIcon,
-  InformationCircleIcon,
-} from "@heroicons/vue/20/solid";
-</script>

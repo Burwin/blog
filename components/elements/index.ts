@@ -1,4 +1,4 @@
-import ba from "ba.vue";
+import ba from "./ba.vue";
 import BFigureFullWidthImage from "./BFigureFullWidthImage.vue";
 import bh2 from "./bh2.vue";
 import bli from "./bli.vue";
