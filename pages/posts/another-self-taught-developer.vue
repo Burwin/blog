@@ -17,15 +17,15 @@ const post = {
     :excerpt="post.excerpt"
   >
     <bh2> Learning how to Pronounce Integer </bh2>
-    <bp
-      >When I was ten years old, my dad dropped off a couple old programming
-      books after one of his visits. One was an intro to C.</bp
-    >
-    <bp
-      >At the time, I was in love with a little-known football video game that
+    <bp>
+      When I was ten years old, my dad dropped off a couple old programming
+      books after one of his visits. One was an intro to C.
+    </bp>
+    <bp>
+      At the time, I was in love with a little-known football video game that
       was decades ahead of its time in terms of off-the-field team management
-      features, called Total Control Football. Gamespot says:</bp
-    >
+      features, called Total Control Football. Gamespot says:
+    </bp>
     <bquote
       quote="I'm not sure if there was a demand for it, but here it is: a football simulation for pigskin fans who love micromanagement."
       name="Gamespot"
