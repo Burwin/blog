@@ -32,6 +32,9 @@ fs.readdir("./pages/posts", (err, files) => {
     }
   });
 
+  // sort posts by date descending
+  posts.sort((a, b) => b.date.getTime() - a.date.getTime());
+
   // Write the JSON output
   fs.writeFileSync("posts.json", JSON.stringify(posts, null, 2), "utf8");
   console.log(`Posts metadata has been written to posts.json.`);
