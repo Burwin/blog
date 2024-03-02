@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { Post } from "./post";
+import { addHours } from "date-fns";
 
 fs.readdir("./pages/posts", (err, files) => {
   if (err) {
@@ -23,7 +24,8 @@ fs.readdir("./pages/posts", (err, files) => {
 
     if (dateMatch && titleMatch && excerptMatch) {
       posts.push({
-        date: new Date(dateMatch[1]),
+        // Add 12 hours to the date to avoid annoying UTC to EST issue
+        date: addHours(new Date(dateMatch[1]), 12),
         title: titleMatch[1],
         description: excerptMatch[1],
         href: `posts/${file.replace(/\.vue$/, "")}`,
