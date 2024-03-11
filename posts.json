@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-03-16T12:00:00.000Z",
+    "title": "Wartime Metaphors for Software Development",
+    "description": "Good generals retreat when they're in disadvantageous positions. From a secure base, they could organize measured attacks. Without a secure base, they were left exposed to annihilation.",
+    "href": "posts/wartime-metaphors-for-software-development",
+    "id": "wartime-metaphors-for-software-development"
+  },
+  {
     "date": "2020-03-13T12:00:00.000Z",
     "title": "Faster Reflection in .NET for JsonCryption.Utf8Json",
     "description": "I needed to use Reflection to add support for Utf8Json to JsonCryption. I wanted to support Utf8Json because it's good and fast... but, reflection in .NET is sloooowwww…",
