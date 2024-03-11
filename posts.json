@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-03-19T12:00:00.000Z",
+    "title": "Self-Taught .NET Developer: How I Learned",
+    "description": "Books and videos for the fundamentals, and then a lot of practice on substantial projects.",
+    "href": "posts/self-taught-dotnet-developer--how-i-learned",
+    "id": "self-taught-dotnet-developer--how-i-learned"
+  },
+  {
     "date": "2020-03-16T12:00:00.000Z",
     "title": "Wartime Metaphors for Software Development",
     "description": "Good generals retreat when they're in disadvantageous positions. From a secure base, they could organize measured attacks. Without a secure base, they were left exposed to annihilation.",
