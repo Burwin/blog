@@ -1,5 +1,12 @@
 [
   {
+    "date": "2024-02-16T12:00:00.000Z",
+    "title": "Fratres Codicis",
+    "description": "I've mentioned for a while that I see 'reading and writing code today' as similar to 'reading and writing text back then'. But we don't have any orders of monks dedicated to coding for the Church... We should.",
+    "href": "posts/fratres-codicis",
+    "id": "fratres-codicis"
+  },
+  {
     "date": "2022-06-10T12:00:00.000Z",
     "title": "HallPass.dev: Consuming Rate-Limited APIs More Easily",
     "description": "HallPass is a .NET library in pre-release status that allows developers calling rate-limited APIs to easily respect those API rate limits within a single instance, and using the basic Token Bucket algorithm. Ease of use is the most important motivation behind HallPass, even more so than pristine accuracy.",
