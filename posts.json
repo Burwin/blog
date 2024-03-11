@@ -1,5 +1,19 @@
 [
   {
+    "date": "2022-06-10T12:00:00.000Z",
+    "title": "HallPass.dev: Consuming Rate-Limited APIs More Easily",
+    "description": "HallPass is a .NET library in pre-release status that allows developers calling rate-limited APIs to easily respect those API rate limits within a single instance, and using the basic Token Bucket algorithm. Ease of use is the most important motivation behind HallPass, even more so than pristine accuracy.",
+    "href": "posts/hallpass-dev--consuming-rate-limited-apis-more-easily",
+    "id": "hallpass-dev--consuming-rate-limited-apis-more-easily"
+  },
+  {
+    "date": "2021-02-18T12:00:00.000Z",
+    "title": "Must-do Lists",
+    "description": "Todos are great, but I have a habit of letting them slip over time.",
+    "href": "posts/must-do-lists",
+    "id": "must-do-lists"
+  },
+  {
     "date": "2020-03-19T12:00:00.000Z",
     "title": "Self-Taught .NET Developer: How I Learned",
     "description": "Books and videos for the fundamentals, and then a lot of practice on substantial projects.",
