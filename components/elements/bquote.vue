@@ -2,7 +2,7 @@
 import { ba } from "../elements";
 defineProps<{
   quote: string;
-  name: string;
+  name?: string;
   contextText?: string;
   contextUrl?: string;
 }>();
@@ -13,7 +13,10 @@ defineProps<{
     <blockquote class="font-semibold text-gray-900">
       <p>“{{ quote }}”</p>
     </blockquote>
-    <figcaption class="mt-6 flex gap-x-4">
+    <figcaption
+      v-if="name || contextText || contextUrl"
+      class="mt-6 flex gap-x-4"
+    >
       <div class="text-sm leading-6">
         <strong class="font-semibold text-gray-900">{{ name }}</strong>
         <template v-if="contextText && !contextUrl">
