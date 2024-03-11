@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const post = {
-  date: "2020-02-27",
+  date: "2020-02-26",
   title: "Tech Debt Leads to Software Death",
   excerpt:
     "When we don't write the code that we know we should write, we incur tech debt. When we write code that we know we shouldn't, we incur tech debt. When we write code in a way that we know could be better, we incur tech debt.",

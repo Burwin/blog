@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const post = {
-  date: "2020-02-21",
+  date: "2020-02-20",
   title: "Religious Automated Tests",
   excerpt:
     "Writing good software is difficult. Writing good software becomes more difficult as the complexity of the software increases.",

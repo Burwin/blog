@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const post = {
-  date: "2020-03-01",
+  date: "2020-02-29",
   title: "MongoDB Agrees: Field Level Encryption is Important",
   excerpt: "Keep gut healthy. Trust gut.",
 };
