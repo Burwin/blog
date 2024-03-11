@@ -1,9 +1,23 @@
 [
   {
-    "date": "2020-02-07T00:00:00.000Z",
+    "date": "2020-02-17T12:00:00.000Z",
+    "title": "Introducing JsonCryption!",
+    "description": "I couldn",
+    "href": "posts/introducing-jsoncryption",
+    "id": "introducing-jsoncryption"
+  },
+  {
+    "date": "2020-02-07T12:00:00.000Z",
     "title": "Intellectual Obesity",
     "description": "Throughout life, one of my greatest character struggles has been converting knowledge into productivity. This blog is part of my attempt to burn off the fact-fat into chiseled apps and a more powerful bench(mark).",
     "href": "posts/intellectual-obesity",
     "id": "intellectual-obesity"
+  },
+  {
+    "date": "2020-02-05T12:00:00.000Z",
+    "title": "Another Self-Taught Developer",
+    "description": "When finally making the switch to a full-time dev, I came across the famous parable of bamboo for the first time. TLDR, once a bamboo seedling begins growing, it doesn",
+    "href": "posts/another-self-taught-developer",
+    "id": "another-self-taught-developer"
   }
 ]

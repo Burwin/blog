@@ -18,9 +18,9 @@ fs.readdir("./pages/posts", (err, files) => {
     const content = fs.readFileSync(filePath, "utf8");
 
     // Simple regex to extract the props. Adjust these regexes based on your file structure.
-    const dateMatch = content.match(/date:\s*['"](.+?)['"]/);
-    const titleMatch = content.match(/title:\s*['"](.+?)['"]/);
-    const excerptMatch = content.match(/excerpt:\s*['"](.+?)['"]/);
+    const dateMatch = content.match(/date:\s*["](.+?)["]/);
+    const titleMatch = content.match(/title:\s*["](.+?)["]/);
+    const excerptMatch = content.match(/excerpt:\s*["](.+?)["]/);
 
     if (dateMatch && titleMatch && excerptMatch) {
       posts.push({
