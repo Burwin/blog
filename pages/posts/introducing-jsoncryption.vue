@@ -260,7 +260,7 @@ const overridingJsonConverter = `public sealed class EncryptAttribute : JsonConv
       immediate domain, and far outside my expertise. Surely, I thought, there
       must be some libraries that handle this already...
     </ElementsBp>
-    <ElementsBh3
+    <ElementsBh3 id="microsoft-aspnetcore-dataprotection"
       >Switching to Microsoft.AspNetCore.DataProtection underneath</ElementsBh3
     >
     <ElementsBp>... yes, there is. Obviously.</ElementsBp>
