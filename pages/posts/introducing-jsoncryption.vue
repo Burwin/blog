@@ -274,10 +274,12 @@ const overridingJsonConverter = `public sealed class EncryptAttribute : JsonConv
       was designed to provide:</ElementsBp
     >
     <ElementsBquote
-      quote="a simple, easy to use cryptographic API a developer can use to protect data, including key management and rotation"
       name="Microsoft"
       context-url="https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/introduction?view=aspnetcore-3.1"
-    ></ElementsBquote>
+    >
+      a simple, easy to use cryptographic API a developer can use to protect
+      data, including key management and rotation
+    </ElementsBquote>
     <ElementsBp>
       It's
       <ElementsBa

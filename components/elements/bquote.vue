@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ba } from "../elements";
 defineProps<{
-  quote: string;
   name?: string;
   contextText?: string;
   contextUrl?: string;
@@ -11,7 +10,7 @@ defineProps<{
 <template>
   <figure class="mt-10 border-l border-indigo-600 pl-9">
     <blockquote class="font-semibold text-gray-900">
-      <p>“{{ quote }}”</p>
+      <p><slot></slot></p>
     </blockquote>
     <figcaption
       v-if="name || contextText || contextUrl"

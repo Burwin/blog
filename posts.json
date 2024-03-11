@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-03-01T12:00:00.000Z",
+    "title": "MongoDB Agrees: Field Level Encryption is Important",
+    "description": "Keep gut healthy. Trust gut.",
+    "href": "posts/mongo-db-agrees--field-level-encryption-is-important",
+    "id": "mongo-db-agrees--field-level-encryption-is-important"
+  },
+  {
     "date": "2020-02-27T12:00:00.000Z",
     "title": "Tech Debt Leads to Software Death",
     "description": "When we don't write the code that we know we should write, we incur tech debt. When we write code that we know we shouldn't, we incur tech debt. When we write code in a way that we know could be better, we incur tech debt.",

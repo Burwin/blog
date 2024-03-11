@@ -29,12 +29,16 @@ const post = {
       <span class="italic">super urgent</span> problem. "It's also small...
       let's just do this one more time," we convince ourselves.
     </ElementsBp>
-    <ElementsBquote quote="It's not like I'll let this get out of control.">
+    <ElementsBquote>
+      It's not like I'll let this get out of control.
     </ElementsBquote>
     <ElementsBp>We know how this story turns out...</ElementsBp>
-    <ElementsBquote
-      quote="But it isn't our fault! We're only developers, after all. With constant pressure to deliver working software, we just have to take shortcuts. Besides, employee turnover is so fast in this industry that I'll be long gone before I need to worry about the effects, anyway."
-    ></ElementsBquote>
+    <ElementsBquote>
+      But it isn't our fault! We're only developers, after all. With constant
+      pressure to deliver working software, we just have to take shortcuts.
+      Besides, employee turnover is so fast in this industry that I'll be long
+      gone before I need to worry about the effects, anyway.
+    </ElementsBquote>
     <ElementsBh2>Now what?</ElementsBh2>
     <ElementsBp>
       Like financial debt, tech debt comes on slowly and imperceptibly. As it
@@ -64,10 +68,9 @@ const post = {
       But debt and sin have been closely linked in Christian theology going back
       to its origins.
     </ElementsBp>
-    <ElementsBquote
-      quote="The wages of sin is death."
-      name="Romans 6:23"
-    ></ElementsBquote>
+    <ElementsBquote name="Romans 6:23">
+      The wages of sin is death.
+    </ElementsBquote>
     <ElementsBp>
       And our tech debt doesn't just impact ourselves. It affects everybody in
       the company. Really, if you think about it, it impacts everybody in the
@@ -76,10 +79,10 @@ const post = {
       population.
     </ElementsBp>
     <ElementsBp> Is there a verse related to this, too? </ElementsBp>
-    <ElementsBquote
-      quote="Wherefore as by one man sin entered into this world, and by sin death; and so death passed upon all men, in whom all have sinned."
-      name="Romans 5:12"
-    ></ElementsBquote>
+    <ElementsBquote name="Romans 5:12">
+      Wherefore as by one man sin entered into this world, and by sin death; and
+      so death passed upon all men, in whom all have sinned.
+    </ElementsBquote>
     <ElementsBp>
       Just replace "sin" with "tech debt"... I didn't because I didn't want to
       write blasphemy.
@@ -113,12 +116,14 @@ const post = {
       developer... somebody who we look up to as a sort of mentor....... a
       coding father figure, if you will.
     </ElementsBp>
-    <ElementsBquote
-      quote="I made took a shortcut here, and I'm sorry about it. What can I do to make it better and get a fresh start?"
-    ></ElementsBquote>
-    <ElementsBquote
-      quote="Write two integration tests and nine unit tests. It will be okay. Go and code better."
-    ></ElementsBquote>
+    <ElementsBquote>
+      I made took a shortcut here, and I'm sorry about it. What can I do to make
+      it better and get a fresh start?
+    </ElementsBquote>
+    <ElementsBquote>
+      Write two integration tests and nine unit tests. It will be okay. Go and
+      code better.
+    </ElementsBquote>
     <ElementsBp>
       At what sort of frequency should this happen? No clue... I'm still just a
       baby figuring things out. I just know that it should happen. It's

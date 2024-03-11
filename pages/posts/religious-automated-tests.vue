@@ -34,13 +34,13 @@ const post = {
       was written by somebody else, it's more likely that we don't fully
       understand what they did, both in the production code and in the tests.
     </ElementsBp>
-    <ElementsBquote
-      quote="Why does it do this? Surely they meant it to do that, instead..."
-    ></ElementsBquote>
+    <ElementsBquote>
+      Why does it do this? Surely they meant it to do that, instead...
+    </ElementsBquote>
     <ElementsBp>So we make a change, and it breaks a test.</ElementsBp>
-    <ElementsBquote
-      quote="Hmm... actually, the test looks wrong, too!"
-    ></ElementsBquote>
+    <ElementsBquote>
+      Hmm... actually, the test looks wrong, too!
+    </ElementsBquote>
     <ElementsBp>So we "fix" the test we broke...</ElementsBp>
     <ElementsBp>
       After a couple more iterations and releases to production, we start
@@ -70,12 +70,18 @@ const post = {
       tests, we can even introduce some new (non-tested) features with little
       trouble for a time.
     </ElementsBp>
-    <ElementsBquote
-      quote="See?! We don't need tests! They were just holding us back, making us slow and requiring extra work for no reason at all. We did tests in the past, but that's outdated."
-    ></ElementsBquote>
-    <ElementsBquote
-      quote="Besides, maybe perhaps you could argue that we needed tests back then in the early days, but we're much better programmers now, so we really don't need them anymore."
-    ></ElementsBquote>
+    <ElementsBquote>
+      <ElementsBp>
+        See?! We don't need tests! They were just holding us back, making us
+        slow and requiring extra work for no reason at all. We did tests in the
+        past, but that's outdated.
+      </ElementsBp>
+      <ElementsBp>
+        Besides, maybe perhaps you could argue that we needed tests back then in
+        the early days, but we're much better programmers now, so we really
+        don't need them anymore.
+      </ElementsBp>
+    </ElementsBquote>
     <ElementsBp>
       After a couple months, making more and more significant changes to the
       existing codebase - which had been thoroughly tested before we liberated
@@ -97,9 +103,10 @@ const post = {
       making a fatal mistake removing them. Some voiced their opinions, but in
       the end they went along with our plan in order to keep their jobs.
     </ElementsBp>
-    <ElementsBquote
-      quote="But we can't just add the old tests back! Our code has changed so much, they wouldn't even apply to our modern codebase."
-    ></ElementsBquote>
+    <ElementsBquote>
+      But we can't just add the old tests back! Our code has changed so much,
+      they wouldn't even apply to our modern codebase.
+    </ElementsBquote>
     <ElementsBp>
       It's true. Many of the old tests cover functionality that has since been
       removed, or significantly modified. None of the latest features were ever
