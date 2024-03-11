@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-02-27T12:00:00.000Z",
+    "title": "Tech Debt Leads to Software Death",
+    "description": "When we don't write the code that we know we should write, we incur tech debt. When we write code that we know we shouldn't, we incur tech debt. When we write code in a way that we know could be better, we incur tech debt.",
+    "href": "posts/tech-debt-leads-to-software-death",
+    "id": "tech-debt-leads-to-software-death"
+  },
+  {
     "date": "2020-02-21T12:00:00.000Z",
     "title": "Religious Automated Tests",
     "description": "Writing good software is difficult. Writing good software becomes more difficult as the complexity of the software increases.",
