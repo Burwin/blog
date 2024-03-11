@@ -6,6 +6,29 @@
           Thoughtful Coding
         </h2>
         <p class="mt-2 text-lg leading-8 text-gray-600">on life and work.</p>
+        <div class="flex justify-start mt-4 space-x-2 text-gray-400">
+          <a
+            href="https://github.com/Burwin"
+            target="_blank"
+            class="hover:cursor-pointer hover:text-indigo-600"
+          >
+            <SvgGitHubLogo class="w-4 h-4" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/burwin/"
+            target="_blank"
+            class="hover:cursor-pointer hover:text-indigo-600"
+          >
+            <SvgLinkedInLogo class="w-4 h-4" />
+          </a>
+          <a
+            href="https://twitter.com/ParallelMike"
+            target="_blank"
+            class="hover:cursor-pointer hover:text-indigo-600"
+          >
+            <SvgXLogo class="w-4 h-4" />
+          </a>
+        </div>
         <div
           class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16"
         >
