@@ -40,3 +40,19 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  publish_rss:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i
+      - run: npx tsx analyze-all-posts.ts
+      - run: npx tsx generate-rss.ts
+      - name: Commit RSS
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/rss.xml
+          git commit -m "Update RSS Feed" || echo "No changes to commit"
+          git push
