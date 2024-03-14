@@ -17,6 +17,7 @@ jobs:
       # Pick your own package manager and build script
       - run: npm install
       - run: npx tsx analyze-all-posts.ts
+      - run: npx tsx generate-rss.ts
       - run: npx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -47,10 +48,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-      - run: npm i
-      - run: npx tsx analyze-all-posts.ts
-      - run: npx tsx generate-rss.ts
+      - uses: actions/download-artifact@v3
+        with:
+          name: public
+          path: ./.output/public
       - name: Commit RSS
         run: |
           git config --local user.email "action@github.com"
