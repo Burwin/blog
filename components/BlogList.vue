@@ -11,6 +11,7 @@
             href="https://github.com/Burwin"
             target="_blank"
             class="hover:cursor-pointer hover:text-indigo-600"
+            title="Follow me on GitHub"
           >
             <SvgGitHubLogo class="w-4 h-4" />
           </a>
@@ -18,6 +19,7 @@
             href="https://www.linkedin.com/in/burwin/"
             target="_blank"
             class="hover:cursor-pointer hover:text-indigo-600"
+            title="Connect with me on LinkedIn"
           >
             <SvgLinkedInLogo class="w-4 h-4" />
           </a>
@@ -25,8 +27,17 @@
             href="https://twitter.com/ParallelMike"
             target="_blank"
             class="hover:cursor-pointer hover:text-indigo-600"
+            title="Follow me on Twitter"
           >
             <SvgXLogo class="w-4 h-4" />
+          </a>
+          <a
+            href="/rss.xml"
+            target="_blank"
+            class="hover:cursor-pointer hover:text-indigo-600"
+            title="Subscribe to RSS feed"
+          >
+            <SvgRssLogo class="w-4 h-4" alt="Subscribe to RSS" />
           </a>
         </div>
         <div
