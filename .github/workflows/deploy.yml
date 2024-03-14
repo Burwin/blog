@@ -23,6 +23,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./.output/public
+      - name: Upload RSS
+        uses: actions/upload-artifact@v3
+        with:
+          name: rss.xml
+          path: ./.output/public/rss.xml
   # Deployment job
   deploy:
     # Add a dependency to the build job
@@ -48,10 +53,11 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v3
         with:
-          name: public
-          path: ./.output/public
+          name: rss.xml
+          path: ./public/rss.xml
       - name: Commit RSS
         run: |
           git config --local user.email "action@github.com"
