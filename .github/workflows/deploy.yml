@@ -44,6 +44,8 @@ jobs:
   publish_rss:
     needs: deploy
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - run: npm i
