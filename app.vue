@@ -7,6 +7,12 @@ useSeoMeta({
 useHead({
   link: [
     {
+      rel: "alternate",
+      type: "application/rss+xml",
+      title: "RSS",
+      href: "/rss.xml",
+    },
+    {
       rel: "apple-touch-icon",
       sizes: "180x180",
       href: "/apple-touch-icon.png",
