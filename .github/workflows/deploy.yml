@@ -58,7 +58,7 @@ jobs:
         with:
           name: rss.xml
           path: ./new/rss.xml
-      - run: cp -f ./new/rss.xml public/rss.xml
+      - run: cp -f new/rss.xml public/rss.xml
       - name: Commit RSS
         run: |
           git config --local user.email "action@github.com"
