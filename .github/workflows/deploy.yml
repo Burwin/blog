@@ -24,7 +24,7 @@ jobs:
         with:
           path: ./.output/public
       - name: Upload RSS
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: rss.xml
           path: ./.output/public/rss.xml
@@ -54,10 +54,11 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: rss.xml
-          path: ./public/rss.xml
+          path: ./new/rss.xml
+      - run: cp -f ./new/rss.xml public/rss.xml
       - name: Commit RSS
         run: |
           git config --local user.email "action@github.com"
