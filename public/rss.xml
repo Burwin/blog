@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Thoughtful Coding]]></title>
+        <description><![CDATA[... on life and work.]]></description>
+        <link>https://mharris.io</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 14 Mar 2024 15:59:46 GMT</lastBuildDate>
+        <atom:link href="https://mharris.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[en]]></language>
+        <managingEditor><![CDATA[Michael Harris]]></managingEditor>
+        <webMaster><![CDATA[Michael Harris]]></webMaster>
+        <item>
+            <title><![CDATA[Know Your Place]]></title>
+            <description><![CDATA[... then fulfill it.]]></description>
+            <link>https://mharris.io/posts/know-your-place</link>
+            <guid isPermaLink="true">https://mharris.io/posts/know-your-place</guid>
+            <pubDate>Thu, 14 Mar 2024 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Fratres Codicis]]></title>
+            <description><![CDATA[I've mentioned for a while that I see 'reading and writing code today' as similar to 'reading and writing text back then'. But we don't have any orders of monks dedicated to coding for the Church... We should.]]></description>
+            <link>https://mharris.io/posts/fratres-codicis</link>
+            <guid isPermaLink="true">https://mharris.io/posts/fratres-codicis</guid>
+            <pubDate>Fri, 16 Feb 2024 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[HallPass.dev: Consuming Rate-Limited APIs More Easily]]></title>
+            <description><![CDATA[HallPass is a .NET library in pre-release status that allows developers calling rate-limited APIs to easily respect those API rate limits within a single instance, and using the basic Token Bucket algorithm. Ease of use is the most important motivation behind HallPass, even more so than pristine accuracy.]]></description>
+            <link>https://mharris.io/posts/hallpass-dev--consuming-rate-limited-apis-more-easily</link>
+            <guid isPermaLink="true">https://mharris.io/posts/hallpass-dev--consuming-rate-limited-apis-more-easily</guid>
+            <pubDate>Fri, 10 Jun 2022 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Must-do Lists]]></title>
+            <description><![CDATA[Todos are great, but I have a habit of letting them slip over time.]]></description>
+            <link>https://mharris.io/posts/must-do-lists</link>
+            <guid isPermaLink="true">https://mharris.io/posts/must-do-lists</guid>
+            <pubDate>Thu, 18 Feb 2021 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Self-Taught .NET Developer: How I Learned]]></title>
+            <description><![CDATA[Books and videos for the fundamentals, and then a lot of practice on substantial projects.]]></description>
+            <link>https://mharris.io/posts/self-taught-dotnet-developer--how-i-learned</link>
+            <guid isPermaLink="true">https://mharris.io/posts/self-taught-dotnet-developer--how-i-learned</guid>
+            <pubDate>Thu, 19 Mar 2020 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Wartime Metaphors for Software Development]]></title>
+            <description><![CDATA[Good generals retreat when they're in disadvantageous positions. From a secure base, they could organize measured attacks. Without a secure base, they were left exposed to annihilation.]]></description>
+            <link>https://mharris.io/posts/wartime-metaphors-for-software-development</link>
+            <guid isPermaLink="true">https://mharris.io/posts/wartime-metaphors-for-software-development</guid>
+            <pubDate>Mon, 16 Mar 2020 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Faster Reflection in .NET for JsonCryption.Utf8Json]]></title>
+            <description><![CDATA[I needed to use Reflection to add support for Utf8Json to JsonCryption. I wanted to support Utf8Json because it's good and fast... but, reflection in .NET is sloooowwww…]]></description>
+            <link>https://mharris.io/posts/faster-reflection-in-dotnet-for-jsoncryption-utf8json</link>
+            <guid isPermaLink="true">https://mharris.io/posts/faster-reflection-in-dotnet-for-jsoncryption-utf8json</guid>
+            <pubDate>Fri, 13 Mar 2020 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[MongoDB Agrees: Field Level Encryption is Important]]></title>
+            <description><![CDATA[Keep gut healthy. Trust gut.]]></description>
+            <link>https://mharris.io/posts/mongo-db-agrees--field-level-encryption-is-important</link>
+            <guid isPermaLink="true">https://mharris.io/posts/mongo-db-agrees--field-level-encryption-is-important</guid>
+            <pubDate>Sat, 29 Feb 2020 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Tech Debt Leads to Software Death]]></title>
+            <description><![CDATA[When we don't write the code that we know we should write, we incur tech debt. When we write code that we know we shouldn't, we incur tech debt. When we write code in a way that we know could be better, we incur tech debt.]]></description>
+            <link>https://mharris.io/posts/tech-debt-leads-to-software-death</link>
+            <guid isPermaLink="true">https://mharris.io/posts/tech-debt-leads-to-software-death</guid>
+            <pubDate>Wed, 26 Feb 2020 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Religious Automated Tests]]></title>
+            <description><![CDATA[Writing good software is difficult. Writing good software becomes more difficult as the complexity of the software increases.]]></description>
+            <link>https://mharris.io/posts/religious-automated-tests</link>
+            <guid isPermaLink="true">https://mharris.io/posts/religious-automated-tests</guid>
+            <pubDate>Thu, 20 Feb 2020 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Introducing JsonCryption!]]></title>
+            <description><![CDATA[I couldn't find a useful .NET library for easy and robust JSON property-level encryption/decryption, so I made one.]]></description>
+            <link>https://mharris.io/posts/introducing-jsoncryption</link>
+            <guid isPermaLink="true">https://mharris.io/posts/introducing-jsoncryption</guid>
+            <pubDate>Mon, 17 Feb 2020 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Intellectual Obesity]]></title>
+            <description><![CDATA[Throughout life, one of my greatest character struggles has been converting knowledge into productivity. This blog is part of my attempt to burn off the fact-fat into chiseled apps and a more powerful bench(mark).]]></description>
+            <link>https://mharris.io/posts/intellectual-obesity</link>
+            <guid isPermaLink="true">https://mharris.io/posts/intellectual-obesity</guid>
+            <pubDate>Fri, 07 Feb 2020 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Another Self-Taught Developer]]></title>
+            <description><![CDATA[When finally making the switch to a full-time dev, I came across the famous parable of ElementsBamboo for the first time. TLDR, once a ElementsBamboo seedling begins growing, it doesn't sprout above ground for the first five years. During that time, it stays busy building a strong and elaborate root system to anchor itself when it finally grows to be more than 80 feet tall. When it finally does sprout, it shoots up multiple stories in a matter of weeks.]]></description>
+            <link>https://mharris.io/posts/another-self-taught-developer</link>
+            <guid isPermaLink="true">https://mharris.io/posts/another-self-taught-developer</guid>
+            <pubDate>Wed, 05 Feb 2020 12:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
