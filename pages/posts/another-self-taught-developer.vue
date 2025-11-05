@@ -3,7 +3,7 @@ const post = {
   date: "2020-02-05",
   title: "Another Self-Taught Developer",
   excerpt:
-    "When finally making the switch to a full-time dev, I came across the famous parable of ElementsBamboo for the first time. TLDR, once a ElementsBamboo seedling begins growing, it doesn't sprout above ground for the first five years. During that time, it stays busy building a strong and elaborate root system to anchor itself when it finally grows to be more than 80 feet tall. When it finally does sprout, it shoots up multiple stories in a matter of weeks.",
+    "When finally making the switch to a full-time dev, I came across the famous parable of bamboo for the first time. TLDR, once a bamboo seedling begins growing, it doesn't sprout above ground for the first five years. During that time, it stays busy building a strong and elaborate root system to anchor itself when it finally grows to be more than 80 feet tall. When it finally does sprout, it shoots up multiple stories in a matter of weeks.",
 };
 </script>
 
@@ -19,17 +19,17 @@ const post = {
       books after one of his visits. One was an intro to C.
     </ElementsBp>
     <ElementsBp>
-      At the time, I was in love with a little-known footElementsBall video game
+      At the time, I was in love with a little-known football video game
       that was decades ahead of its time in terms of off-the-field team
-      management features, called Total Control FootElementsBall. Gamespot says:
+      management features, called Total Control Football. Gamespot says:
     </ElementsBp>
     <ElementsBquote
       name="Gamespot"
-      contextText="Total Control FootElementsBall Review"
-      contextUrl="https://www.gamespot.com/reviews/total-control-footElementsBall-review/1900-2535192/"
+      contextText="Total Control Football Review"
+      contextUrl="https://www.gamespot.com/reviews/total-control-football-review/1900-2535192/"
     >
       I'm not sure if there was a demand for it, but here it is: a
-      footElementsBall simulation for pigskin fans who love micromanagement.
+      football simulation for pigskin fans who love micromanagement.
     </ElementsBquote>
     <ElementsBp>It was glorious. Madden is still catching up.</ElementsBp>
     <ElementsBp>
@@ -41,7 +41,7 @@ const post = {
       I don't remember much of my early reading from the book, but I remember
       generally just re-typing the example programs listed in its pages.
       Attempting to compile them taught me early on how rage-inducing a missing
-      semicolon could be ElementsBack then before intelligent IDEs could spot
+      semicolon could be back then before intelligent IDEs could spot
       the obvious. The one thing I do know is that, thanks to this book, I
       learned the word integer long before finally hearing it pronounced (it's
       NOT a hard 'G').
@@ -62,14 +62,14 @@ const post = {
       covered call trading strategy. For a couple hundred bucks (I had a credit
       card and wasn't yet afraid of debt), I was able to purchase a few years
       worth of historical stock option market data. My goal was to load it into
-      my dataElementsBase, clean it up, and then unleash the power of SSMS's
+      my database, clean it up, and then unleash the power of SSMS's
       data mining module to find the Holy Grail. I knew it would work, which
       kept the motivation strong. At the same time, I knew there was no chance
       that it would work, which led to my ultimate justification:
     </ElementsBp>
     <ElementsBquote name="me">
       Even if it doesn't work, I'll learn a bit of SQL and how to work with a
-      dataElementsBase.
+      database.
     </ElementsBquote>
     <ElementsBp>
       I took a couple programming courses in college: Intro to Java and
@@ -78,8 +78,8 @@ const post = {
     </ElementsBp>
     <ElementsBh2>Getting in the Zone</ElementsBh2>
     <ElementsBp>
-      While attending business school for an MElementsBa, I started an
-      internship on the trading floor of BNP PariElementsBas in Paris at the
+      While attending business school for an MBA, I started an
+      internship on the trading floor of BNP Paribas in Paris at the
       height (trough?) of the 2009 financial crisis. At the end, I was out of
       work on my last day, so I spent the day building an "art macro" in Excel.
       It did nothing more than randomly cycle through colors within cells,
@@ -87,7 +87,7 @@ const post = {
     </ElementsBp>
     <ElementsBp>
       In my next internship (now Societe Generale), I actually used my budding
-      VElementsBa skills for real work. After a month or so, I was told that I
+      VBA skills for real work. After a month or so, I was told that I
       would be taking over the weekly responsibility of creating/updating a
       standard internal report on the Credit market for our traders. The intern
       passing off her mantel showed me all the tedious manual steps she would
@@ -111,18 +111,18 @@ const post = {
       </ElementsBli>
     </ElementsBul>
     <ElementsBp>
-      Before finishing my studies and moving ElementsBack to the States, I used
-      my new skills (horrible, ugly, emElementsBarrassing coding "skills" at the
+      Before finishing my studies and moving back to the States, I used
+      my new skills (horrible, ugly, embarrassing coding "skills" at the
       time) on a couple fun personal projects, including a study on a historical
       equity trading strategy using Value and Quality to rank companies for
       buying/selling.
     </ElementsBp>
     <ElementsBh2>Looking for More</ElementsBh2>
     <ElementsBp>
-      My full-time career started in Manhattan at the same ElementsBank.
+      My full-time career started in Manhattan at the same bank.
       Although I was technically in a marketing role on the trading floor, it
       was a relatively quantitative position. From time to time, our team could
-      justify coding up a tool quickly with VElementsBa, and I was always the
+      justify coding up a tool quickly with VBA, and I was always the
       one to jump on these opportunities.
     </ElementsBp>
     <ElementsBp
@@ -135,7 +135,7 @@ const post = {
       </ElementsBli>
       <ElementsBli>
         If I want to leave this city, my options for location are pretty much
-        limited to the handful of major gloElementsBal financial cities.
+        limited to the handful of major global financial cities.
       </ElementsBli>
       <ElementsBli>
         If I want to work for myself, my options are virtually non-existent.
@@ -149,7 +149,7 @@ const post = {
       >
     </ElementsBul>
     <ElementsBp>
-      So should I go ElementsBack to school? With a few degrees and a small
+      So should I go back to school? With a few degrees and a small
       mortgage in student loans... no.
     </ElementsBp>
     <ElementsBp>
@@ -167,7 +167,7 @@ const post = {
       >"I've heard of that," he said, trying to sound impressive...</ElementsBp
     >
     <ElementsBp>
-      The Team Lead went on to give me a long list of vocaElementsBulary to
+      The Team Lead went on to give me a long list of vocabulary to
       start my research: design patterns, write tests that fail (what??),
       message queues, etc. Finally, I was beginning to know what I don't know.
     </ElementsBp>
@@ -226,11 +226,11 @@ const post = {
         transformations are not only possible, they're <i>inevitable</i>
       </ElementsBli>
     </ElementsBul>
-    <ElementsBh2>Closing, the famous ElementsBamboo story...</ElementsBh2>
+    <ElementsBh2>Closing, the famous bamboo story...</ElementsBh2>
     <ElementsBp>
       When finally making the switch to a full-time dev, I came across the
-      famous parable of ElementsBamboo for the first time.
-      <strong>TLDR</strong>, once a ElementsBamboo seedling begins growing, it
+      famous parable of bamboo for the first time.
+      <strong>TLDR</strong>, once a bamboo seedling begins growing, it
       doesn't sprout above ground for the first five years.
     </ElementsBp>
     <ElementsBp>
