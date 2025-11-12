@@ -3,7 +3,7 @@ const post = {
   date: "2025-11-12",
   title: "The hard way",
   excerpt:
-    "If I wanted to switch to vim, these are some things I think I'd need.",
+    "Will Copilot (and AI coding agents) make me weak in the long-run? What about even just Intellisense (LSP) or working in a standard IDE?",
 };
 </script>
 
