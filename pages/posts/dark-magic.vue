@@ -2,7 +2,7 @@
 const post = {
   date: "2025-11-13",
   title: "Dark Magic",
-  excerpt: "It entices us with ultimate power, but at the cost of our souls.",
+  excerpt: "It entices us with ultimate power, but at the cost of our souls. (cough AI cough)",
 };
 </script>
 
