@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { postDate } from "../../utils";
 const post = {
   date: "2020-03-19",
   title: "Self-Taught .NET Developer: How I Learned",
@@ -9,7 +10,7 @@ const post = {
 
 <template>
   <BlogPost
-    :date="new Date(post.date)"
+    :date="postDate(new Date(post.date))"
     :title="post.title"
     :excerpt="post.excerpt"
   >

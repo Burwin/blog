@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { postDate } from "../../utils";
 const post = {
   date: "2022-06-10",
   title: "HallPass.dev: Consuming Rate-Limited APIs More Easily",
@@ -63,7 +64,7 @@ builder.Services.AddHallPass(config =>
 
 <template>
   <BlogPost
-    :date="new Date(post.date)"
+    :date="postDate(new Date(post.date))"
     :title="post.title"
     :excerpt="post.excerpt"
   >
