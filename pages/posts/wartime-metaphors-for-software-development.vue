@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { postDate } from "../../utils";
+import { addHours } from 'date-fns';
 const post = {
   date: "2020-03-16",
   title: "Wartime Metaphors for Software Development",
@@ -10,7 +10,7 @@ const post = {
 
 <template>
   <BlogPost
-    :date="postDate(new Date(post.date))"
+    :date="addHours(new Date(post.date), 12)"
     :title="post.title"
     :excerpt="post.excerpt"
   >
