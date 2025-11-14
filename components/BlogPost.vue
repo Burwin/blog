@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { setHours } from 'date-fns';
 defineProps<{
   date: Date;
   title: string;
@@ -15,7 +14,7 @@ defineProps<{
     <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
       <main>
         <article>
-          <BlogDate :date="setHours(date, 12)" />
+          <BlogDate :date="date" />
           <BlogTitle :title="title" />
           <BlogExcerpt v-if="excerpt">
             {{ excerpt }}
