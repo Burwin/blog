@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-04-15T12:00:00.000Z",
+    "title": "Easy Domain Service Layers",
+    "description": "Little ramble on a relatively easy and clean way to implement the Domain Services layer",
+    "href": "posts/domain-layers",
+    "id": "domain-layers"
+  },
+  {
     "date": "2025-11-13T12:00:00.000Z",
     "title": "Dark Magic",
     "description": "It entices us with ultimate power, but at the cost of our souls. (cough AI cough)",
