@@ -40,6 +40,7 @@
             <SvgRssLogo class="w-4 h-4" alt="Subscribe to RSS" />
           </a>
         </div>
+        <ToptalBadge />
         <div
           class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16"
         >
