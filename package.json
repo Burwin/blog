@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npx tsx compile-md-posts.ts && npx tsx analyze-all-posts.ts && nuxt build",
+    "build": "npx tsx compile-md-posts.ts && npx tsx analyze-all-posts.ts && npx tsx generate-rss.ts && nuxt build",
     "dev": "npx tsx compile-md-posts.ts && npx tsx analyze-all-posts.ts && nuxt dev",
-    "generate": "npx tsx compile-md-posts.ts && npx tsx analyze-all-posts.ts && nuxt generate",
+    "generate": "npx tsx compile-md-posts.ts && npx tsx analyze-all-posts.ts && npx tsx generate-rss.ts && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
