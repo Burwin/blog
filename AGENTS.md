@@ -1,18 +1,20 @@
 # AGENTS.md
 
-Nuxt 3 + Vue 3 + Tailwind static blog, deployed to GitHub Pages at mharris.io.
+Nuxt 3 + Vue 3 + Tailwind blog, served at mharris.io by **Cloudflare Workers & Pages** (SSR), auto-built from this repo.
 
 ## Deploy
 
-- Production branch is **`m`**, not `main`/`master`. `.github/workflows/deploy.yml` only triggers on push to `m`.
-- The action runs `compile-md-posts.ts`, `analyze-all-posts.ts`, `generate-rss.ts`, then `nuxt build --preset github_pages`, uploads `./.output/public`, and (separately) commits the regenerated `public/rss.xml` back to the repo.
+- Production branch is **`m`**, not `main`/`master`.
+- **Production is Cloudflare Workers & Pages**, connected to this repo: every push to `m` triggers a CF build (config lives in the Cloudflare dashboard, not this repo). mharris.io DNS → Cloudflare proxy → that deployment.
+- `.node-version` pins Node 22 for the CF build image. Do not remove it: CF's default is Node 18, which cannot install/build Nuxt ≥3.21 (`nuxt prepare` crashes in postinstall). This froze prod at the 2026-07-23 "Trust" commit until the pin was added.
+- There is **no GitHub Actions deploy**. The old `deploy.yml` (GitHub Pages) was removed 2026-07-23: GitHub Pages had long stopped serving mharris.io (DNS moved to Cloudflare; GitHub no longer held a cert for the domain), and its green runs falsely suggested pushes were live. Its `publish_rss` job had also been a silent no-op since March 2024 (`download-artifact@v4` directory-extraction bug). The stale GitHub Pages copy still exists but only redirects; disable Pages in repo settings if it ever confuses.
 
 ## Commands
 
-- `npm run dev` / `build` / `generate` — each one prepends `npx tsx compile-md-posts.ts && npx tsx analyze-all-posts.ts` before invoking Nuxt. Running `nuxt dev` directly will skip the regeneration step.
+- `npm run dev` / `build` / `generate` — each one prepends `npx tsx compile-md-posts.ts && npx tsx analyze-all-posts.ts` before invoking Nuxt (`build`/`generate` also run `npx tsx generate-rss.ts`). Running `nuxt dev` directly will skip the regeneration step.
 - `npx tsx compile-md-posts.ts` — compile `content/posts/*.md` to `pages/posts/*.vue`.
 - `npx tsx analyze-all-posts.ts` — regenerate `posts.json` from `pages/posts/*.vue`.
-- `npx tsx generate-rss.ts` — regenerate `public/rss.xml` from `posts.json`. **Not in package.json scripts**; only CI runs it. Run it locally if you need a fresh RSS feed.
+- `npx tsx generate-rss.ts` — regenerate `public/rss.xml` from `posts.json`. Runs as part of `npm run build` / `generate`.
 - No tests, no lint, no formatter config. Prettier is suggested in `.devcontainer/devcontainer.json` but unconfigured.
 
 ## Post pipeline
