@@ -4,7 +4,7 @@
         <description><![CDATA[... on life and work.]]></description>
         <link>https://mharris.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 23 Jul 2026 19:46:33 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Jul 2026 20:41:51 GMT</lastBuildDate>
         <atom:link href="https://mharris.io/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <managingEditor><![CDATA[Michael Harris]]></managingEditor>
@@ -14,6 +14,13 @@
             <description><![CDATA[What does your codebase actually do? Gherkin makes it easier for people to review, and AI handles the workload.]]></description>
             <link>https://mharris.io/posts/gherkinizer</link>
             <guid isPermaLink="true">https://mharris.io/posts/gherkinizer</guid>
+            <pubDate>Thu, 23 Jul 2026 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[People-first AI]]></title>
+            <description><![CDATA[AI development should be focused on reducing the most friction from the development process, which is NOT typing code]]></description>
+            <link>https://mharris.io/posts/people-first-ai</link>
+            <guid isPermaLink="true">https://mharris.io/posts/people-first-ai</guid>
             <pubDate>Thu, 23 Jul 2026 12:00:00 GMT</pubDate>
         </item>
         <item>

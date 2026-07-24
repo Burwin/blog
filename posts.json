@@ -8,6 +8,13 @@
   },
   {
     "date": "2026-07-23T12:00:00.000Z",
+    "title": "People-first AI",
+    "description": "AI development should be focused on reducing the most friction from the development process, which is NOT typing code",
+    "href": "posts/people-first-ai",
+    "id": "people-first-ai"
+  },
+  {
+    "date": "2026-07-23T12:00:00.000Z",
     "title": "Trust",
     "description": "When people cannot trust something, that thing is worthless",
     "href": "posts/trust",
