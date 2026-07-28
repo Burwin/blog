@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-07-28T12:00:00.000Z",
+    "title": "Trust Simplified",
+    "description": "What do I mean when I say that TRUST is what we should try to optimize for when building software, especially with AI in the loop?",
+    "href": "posts/trust-simplified",
+    "id": "trust-simplified"
+  },
+  {
     "date": "2026-07-23T12:00:00.000Z",
     "title": "Gherkinizer",
     "description": "What does your codebase actually do? Gherkin makes it easier for people to review, and AI handles the workload.",
