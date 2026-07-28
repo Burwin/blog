@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-07-28T12:00:00.000Z",
+    "title": "Post-AI Dev Shops",
+    "description": "AI dramatically changes how small dev shops operate; what do I think is one of the future paths for guys like me?",
+    "href": "posts/post-ai-dev-shops",
+    "id": "post-ai-dev-shops"
+  },
+  {
+    "date": "2026-07-28T12:00:00.000Z",
     "title": "Trust Simplified",
     "description": "What do I mean when I say that TRUST is what we should try to optimize for when building software, especially with AI in the loop?",
     "href": "posts/trust-simplified",
