@@ -1,0 +1,19 @@
+<!-- GENERATED FROM content/posts/constitution.md — DO NOT EDIT -->
+<script setup lang="ts">
+import { addHours } from 'date-fns';
+const post = {
+  date: "2026-07-29",
+  title: "Constitution",
+  excerpt: "Since we're building software for users, and users don't care what the code looks like as long as it behaves as expected, our main concern should be clarifying and ensuring those expectations",
+};
+</script>
+
+<template>
+  <BlogPost
+    :date="addHours(new Date(post.date), 12)"
+    :title="post.title"
+    :excerpt="post.excerpt"
+  >
+    <ElementsBp>How can I make sure the software behaves as expected if I'm not sure what the expectations are?</ElementsBp><ElementsBp>How can I make sure that I don't break expectations when making future changes if I don't track how the expectations themselves would change for a new feature?</ElementsBp><ElementsBp>How can I ensure that I have valid automated tests for each critical user expectation of my software?</ElementsBp><ElementsBp>How can I do all this, while reducing friction as much as possible for the humans that are ultimately responsible for reviewing and signing off on the official expectations?</ElementsBp><ElementsBp>Some thoughts:</ElementsBp><ElementsBol><ElementsBli>I should be able to find all critical expectations in a central place</ElementsBli><ElementsBli>Expectations (I'm going to start calling them rules going forward) should be simply stated</ElementsBli><ElementsBli>Each rule should be immutable</ElementsBli><ElementsBli>If we need to tweak a rule, we cancel the old and create a new</ElementsBli><ElementsBli>Each rule has a unique monotically increasing ID (could be namespaced per module) to make referencing it easier</ElementsBli></ElementsBol><ElementsBp>So now when we want to add a new feature or change something, the iterative loop for humans (especially business domain experts) is about as tight and clear as can be. It looks something like this:</ElementsBp><ElementsBol><ElementsBli>Describe in normal words what we want the new feature to be like</ElementsBli><ElementsBli>Generate changes to the rules file and diff it</ElementsBli><ElementsBli>Show the diff to the person making the decision to make sure everybody is on the same page about what the change means</ElementsBli><ElementsBli>Commit the changes when satisfied</ElementsBli><ElementsBli>Make sure every active rule has a corresponding automated test (mutate the tests to verify validity)</ElementsBli><ElementsBli>Let your AI system run wild implementing the new feature, making sure that all rule tests pass when finished</ElementsBli></ElementsBol><ElementsBp>AI needs clear boundaries, but I don't care what the code looks like so I don't want to answer a bunch of detailed internal technical questions about how it goes about solving the problems that matter, which are the rules themselves. If we have confidence in the rules, and we have confidence that the software satisfies those rules (via valid tests), then we can trust the software.</ElementsBp><ElementsBp>If the rules are hard to read, we lose trust that the rules themselves are valid.</ElementsBp><ElementsBp>If the rule changes are hard to understand, then we lose trust in the rules.</ElementsBp><ElementsBp>If the tests covering the rules aren't challenged with mutation testing techniques (and other approaches), then we lost trust in the software implementing the rules reliably.</ElementsBp><ElementsBp>But if we want to maximize TRUST, then we need simple rules that are easy enough to reason about, which are covered by valid tests.</ElementsBp><ElementsBp>Then, if the users come back and say &quot;this isn't working as expected&quot;, that means we need to add some clarity to the rules and refine things over time, always benefitting from a growing suite of guardrails.</ElementsBp>
+  </BlogPost>
+</template>

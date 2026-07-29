@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-07-29T12:00:00.000Z",
+    "title": "Constitution",
+    "description": "Since we're building software for users, and users don't care what the code looks like as long as it behaves as expected, our main concern should be clarifying and ensuring those expectations",
+    "href": "posts/constitution",
+    "id": "constitution"
+  },
+  {
+    "date": "2026-07-29T12:00:00.000Z",
     "title": "Eliminate Spam with a Protocol",
     "description": "Spam is getting annoying - emails, texts, phone calls - but we can eliminate it mechanically with an open protocol",
     "href": "posts/treehaus",
