@@ -2,7 +2,7 @@
 
 Catholic. Husband. Father. Traditionalist. Developer. Entrepreneur.
 
-- [X](https://twitter.com/ParallelMike)
+- [X](https://twitter.com/not_ai)
 - [LinkedIn](https://www.linkedin.com/in/burwin/)
 - [bamboo.dev](https://www.bamboo.dev/)
 

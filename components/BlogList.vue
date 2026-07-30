@@ -24,7 +24,7 @@
             <SvgLinkedInLogo class="w-4 h-4" />
           </a>
           <a
-            href="https://twitter.com/ParallelMike"
+            href="https://twitter.com/not_ai"
             target="_blank"
             class="hover:cursor-pointer hover:text-indigo-600"
             title="Follow me on Twitter"
