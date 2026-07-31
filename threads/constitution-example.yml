@@ -1,0 +1,33 @@
+slug: constitution-example
+url: https://mharris.io/posts/constitution-example
+title: Constitution (with example)
+status: draft
+tweets:
+  - text: |-
+      Here's an example of what my "constitution" definition might look like.
+
+      ## Conventions
+
+      1. Rules are immutable.
+      2. Rules are written in an [EARS](https://en.wikipedia.org/wiki/Easy_Approach_to_Requirements_Syntax)-like style.
+      3. IDs are never reused.
+      4. IDs use a short section prefix + sequential number.
+      5. To change a rule (since it's idempotent): prepend it with `[REPLACED_BY: <new-id>]` and prepend the new one with `[REPLACES: <old-id>]`
+      6. To cancel a rule: prepend with `[CANCELLED]`
+      7. To add a rule: increment the ID for the given section
+
+      ## Example
+
+      ```
+      ## Authentication
+
+      AUTH-1: WHEN a user submits valid credentials, the system shall redirect them to the dashboard.
+      AUTH-2: WHEN a user submits invalid credentials, the system shall display the message “Invalid email or password.”
+
+      ## Reporting
+
+      REP-1: The system shall generate the monthly summary report in under 3 seconds for datasets up to 50,000 rows.
+      REP-2 [REPLACED_BY: REP-3]: The export button shall produce a CSV file.
+      REP-3 [REPLACES: REP-2]: The export button shall produce an Excel (.xlsx) file.
+      ```
+  - text: https://mharris.io/posts/constitution-example
