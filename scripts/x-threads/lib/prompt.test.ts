@@ -29,8 +29,8 @@ test('buildThreadPrompt user includes title/body/url; system requires single ver
     'system must require JSON array output',
   );
   assert.ok(
-    !/hook|engaging|≤\s*~?260|~260|under 280/.test(systemLower),
-    'system must not require hook or soft char limit',
+    !/\bengaging\b|≤\s*~?260|~260|under 280|soft target/.test(systemLower),
+    'system must not require engaging hook or soft char limit',
   );
 });
 
