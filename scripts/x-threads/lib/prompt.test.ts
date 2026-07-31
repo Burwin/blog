@@ -40,6 +40,12 @@ test('parseLlmTweetList accepts a JSON array of strings', () => {
   assert.deepEqual(tweets, ['First tweet here.', 'Second tweet with more.']);
 });
 
+test('parseLlmTweetList tolerates raw newlines inside JSON string literals', () => {
+  const raw = '["Line one.\n\nLine two."]';
+  const tweets = parseLlmTweetList(raw);
+  assert.deepEqual(tweets, ['Line one.\n\nLine two.']);
+});
+
 test('parseLlmTweetList rejects empty array', () => {
   assert.throws(() => parseLlmTweetList('[]'), /empty|no tweets|at least one/i);
 });

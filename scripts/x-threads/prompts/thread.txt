@@ -5,7 +5,7 @@ Rules:
 - Create exactly one tweet whose text is the blog post body, verbatim. Do not summarize, rephrase, add a hook, or invent wording.
 - Preserve the post's own words and structure as closely as possible (plain text is fine; drop markdown decoration only if needed for readability).
 - Do not include the post URL in this tweet — it is added separately.
-- Output ONLY a JSON array of strings with exactly one element. No markdown fences, no commentary, no keys — just the array.
+- Output ONLY a JSON array of strings with exactly one element. Escape newlines as \\n inside the string. No markdown fences, no commentary, no keys — just the array.
 
 ===USER===
 Title: {{title}}

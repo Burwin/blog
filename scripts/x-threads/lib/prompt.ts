@@ -43,6 +43,46 @@ export function buildThreadPrompt(input: {
   return { system, user };
 }
 
+/** Escape raw control chars inside JSON string literals (LLMs often emit bare newlines). */
+function escapeControlCharsInJsonStrings(text: string): string {
+  let out = '';
+  let inString = false;
+  let escaped = false;
+  for (const ch of text) {
+    if (escaped) {
+      out += ch;
+      escaped = false;
+      continue;
+    }
+    if (inString && ch === '\\') {
+      out += ch;
+      escaped = true;
+      continue;
+    }
+    if (ch === '"') {
+      inString = !inString;
+      out += ch;
+      continue;
+    }
+    if (inString) {
+      if (ch === '\n') {
+        out += '\\n';
+        continue;
+      }
+      if (ch === '\r') {
+        out += '\\r';
+        continue;
+      }
+      if (ch === '\t') {
+        out += '\\t';
+        continue;
+      }
+    }
+    out += ch;
+  }
+  return out;
+}
+
 export function parseLlmTweetList(raw: string): string[] {
   let text = raw.trim();
   const fenceMatch = text.match(/^```(?:\w+)?\s*\n?([\s\S]*?)\n?```\s*$/i);
@@ -52,8 +92,12 @@ export function parseLlmTweetList(raw: string): string[] {
   let parsed: unknown;
   try {
     parsed = JSON.parse(text);
-  } catch (e) {
-    throw new Error(`invalid JSON: ${e instanceof Error ? e.message : String(e)}`);
+  } catch {
+    try {
+      parsed = JSON.parse(escapeControlCharsInJsonStrings(text));
+    } catch (e) {
+      throw new Error(`invalid JSON: ${e instanceof Error ? e.message : String(e)}`);
+    }
   }
   if (!Array.isArray(parsed)) {
     throw new Error('expected a JSON array');
