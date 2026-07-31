@@ -1,0 +1,123 @@
+# Draft X threads from new blog posts (push to m / manual).
+# Opens a review PR with threads/<slug>.yml — does not post to X.
+name: X thread draft
+
+on:
+  push:
+    branches: [m]
+    paths:
+      - posts.json
+      - content/posts/**
+      - pages/posts/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: x-thread-draft-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Full history so create-pull-request can diff cleanly
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Draft thread YAML
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: npx tsx scripts/x-threads/bin/draft.ts
+
+      - name: PR metadata from new drafts
+        id: meta
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          changed=()
+          for f in threads/*.yml; do
+            base=$(basename "$f")
+            if [ "$base" = "config.yml" ]; then
+              continue
+            fi
+            if git status --porcelain -- "$f" | grep -q .; then
+              changed+=("$f")
+            fi
+          done
+
+          if [ "${#changed[@]}" -eq 0 ]; then
+            echo "has_drafts=false" >> "$GITHUB_OUTPUT"
+            echo "No new thread draft files; skipping PR."
+            exit 0
+          fi
+
+          echo "has_drafts=true" >> "$GITHUB_OUTPUT"
+
+          titles=()
+          slugs=()
+          for f in "${changed[@]}"; do
+            slug=$(basename "$f" .yml)
+            slugs+=("$slug")
+            title=$(
+              node --input-type=module -e "
+                import fs from 'node:fs';
+                import YAML from 'yaml';
+                const d = YAML.parse(fs.readFileSync(process.argv[1], 'utf8'));
+                process.stdout.write(String(d.title ?? ''));
+              " "$f" 2>/dev/null || true
+            )
+            if [ -z "$title" ]; then
+              title="$slug"
+            fi
+            titles+=("$title")
+          done
+
+          if [ "${#changed[@]}" -eq 1 ]; then
+            echo "branch=x-thread/${slugs[0]}" >> "$GITHUB_OUTPUT"
+            echo "title=X thread draft: ${titles[0]}" >> "$GITHUB_OUTPUT"
+          else
+            echo "branch=x-thread/drafts" >> "$GITHUB_OUTPUT"
+            echo "title=X thread drafts (${#changed[@]})" >> "$GITHUB_OUTPUT"
+          fi
+
+          {
+            echo "body<<EOF"
+            echo "Auto-drafted X thread(s) for human review."
+            echo ""
+            echo "Files:"
+            for f in "${changed[@]}"; do
+              echo "- \`$f\`"
+            done
+            echo ""
+            echo "Edit the YAML as needed, then merge into \`m\` to publish"
+            echo "(workflow \`x-thread-publish\`)."
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create pull request
+        if: steps.meta.outputs.has_drafts == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: ${{ steps.meta.outputs.title }}
+          branch: ${{ steps.meta.outputs.branch }}
+          title: ${{ steps.meta.outputs.title }}
+          body: ${{ steps.meta.outputs.body }}
+          add-paths: |
+            threads/*.yml
+          delete-branch: true
+          labels: x-thread

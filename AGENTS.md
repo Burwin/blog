@@ -15,7 +15,12 @@ Nuxt 3 + Vue 3 + Tailwind blog, served at mharris.io by **Cloudflare Workers & P
 - `npx tsx compile-md-posts.ts` — compile `content/posts/*.md` to `pages/posts/*.vue`.
 - `npx tsx analyze-all-posts.ts` — regenerate `posts.json` from `pages/posts/*.vue`.
 - `npx tsx generate-rss.ts` — regenerate `public/rss.xml` from `posts.json`. Runs as part of `npm run build` / `generate`.
-- No tests, no lint, no formatter config. Prettier is suggested in `.devcontainer/devcontainer.json` but unconfigured.
+- `npm test` — unit tests for `scripts/x-threads/` only (Node built-in test runner; no network).
+- No lint / formatter config. Prettier is suggested in `.devcontainer/devcontainer.json` but unconfigured.
+
+## X threads
+
+Auto-draft / publish blog posts as X threads. Human setup checklist (X app, GitHub secrets, `go_live_date`, smoke): **`scripts/x-threads/README.md`**. Do not enable publish secrets or merge draft YAMLs until that checklist is done — no silent prod tweets.
 
 ## Post pipeline
 
