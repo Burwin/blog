@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { buildThreadPrompt, parseLlmTweetList } from './prompt.ts';
 
-test('buildThreadPrompt user includes title/body/url; system requires near-verbatim, hook, JSON array, ~260 chars', () => {
+test('buildThreadPrompt user includes title/body/url; system requires single verbatim tweet + JSON array', () => {
   const input = {
     title: 'Trust',
     body: 'Trust is earned slowly and lost quickly.\n\nPeople notice when you keep small promises.',
@@ -17,21 +17,20 @@ test('buildThreadPrompt user includes title/body/url; system requires near-verba
 
   const systemLower = system.toLowerCase();
   assert.ok(
-    /near[- ]verbatim|verbatim|own wording|post'?s (own )?wording/.test(systemLower),
-    'system must require near-verbatim wording',
+    /verbatim|own wording|post'?s (own )?wording|own words/.test(systemLower),
+    'system must require verbatim wording',
   );
   assert.ok(
-    /hook|engaging|open(ing)?/.test(systemLower),
-    'system must require an engaging hook',
+    /single tweet|exactly one tweet|one tweet/.test(systemLower),
+    'system must require a single tweet',
   );
   assert.ok(
     /json\s*array|array of (json\s*)?strings|json/.test(systemLower),
     'system must require JSON array output',
   );
   assert.ok(
-    /260|~260|around 260|at most 260|≤\s*~?260|under 280|≤\s*280/.test(systemLower) ||
-      /260|~260|around 260|at most 260|under 280/.test(system),
-    'system must guide toward ≤~260 chars per tweet',
+    !/hook|engaging|≤\s*~?260|~260|under 280/.test(systemLower),
+    'system must not require hook or soft char limit',
   );
 });
 

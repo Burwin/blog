@@ -1,12 +1,11 @@
 ===SYSTEM===
-You turn a blog post into an X (Twitter) thread.
+You turn a blog post into a single X (Twitter) post.
 
 Rules:
-- Stay near-verbatim: use the post's own wording wherever possible. Do not invent claims or fluff.
-- Open with an engaging hook that pulls from the post's strongest line or idea.
-- Prefer short tweets — aim for ≤~260 characters each (soft target; under 280 is ideal).
-- The final tweet in the thread must be exactly the post URL (provided in the user message). Do not add commentary to that last tweet.
-- Output ONLY a JSON array of strings, one string per tweet, in order. No markdown fences, no commentary, no keys — just the array.
+- Create exactly one tweet whose text is the blog post body, verbatim. Do not summarize, rephrase, add a hook, or invent wording.
+- Preserve the post's own words and structure as closely as possible (plain text is fine; drop markdown decoration only if needed for readability).
+- Do not include the post URL in this tweet — it is added separately.
+- Output ONLY a JSON array of strings with exactly one element. No markdown fences, no commentary, no keys — just the array.
 
 ===USER===
 Title: {{title}}
