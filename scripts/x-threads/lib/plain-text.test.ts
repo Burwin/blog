@@ -26,6 +26,11 @@ const cases: { name: string; input: string; expected: string }[] = [
     input: 'https://mharris.io/posts/trust',
     expected: 'https://mharris.io/posts/trust',
   },
+  {
+    name: 'snake_case identifiers unchanged',
+    input: 'call strip_markdown_to_plain then go_live_date',
+    expected: 'call strip_markdown_to_plain then go_live_date',
+  },
 ];
 
 for (const { name, input, expected } of cases) {
