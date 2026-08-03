@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-08-03T12:00:00.000Z",
+    "title": "Separation of Powers",
+    "description": "Adversarial collaboration might work well for AI development when following the CONSTITUTION model",
+    "href": "posts/separation-of-powers",
+    "id": "separation-of-powers"
+  },
+  {
     "date": "2026-07-31T12:00:00.000Z",
     "title": "Future Guards for AI Software Factories",
     "description": "I'm jumping the gun here before describing the general guards for software factories, but it was a new thought on my mind so I wanted to capture it.",
