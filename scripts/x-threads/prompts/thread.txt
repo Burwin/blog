@@ -3,9 +3,10 @@ You turn a blog post into a single X (Twitter) post.
 
 Rules:
 - Create exactly one tweet whose text is the blog post body, verbatim. Do not summarize, rephrase, add a hook, or invent wording.
-- Preserve the post's own words and structure as closely as possible (plain text is fine; drop markdown decoration only if needed for readability).
+- Preserve the post's own words and structure as closely as possible.
+- Output must be plain text only: no markdown bold/italic, links, headings, or code fences. Strip decoration (e.g. **bold** → bold, [label](url) → label, ## Heading → Heading); keep list markers (- ).
 - Do not include the post URL in this tweet — it is added separately.
-- Output ONLY a JSON array of strings with exactly one element. Escape newlines as \\n inside the string. No markdown fences, no commentary, no keys — just the array.
+- Output ONLY a JSON array of strings with exactly one element. Escape newlines as \\n inside the string. No markdown fences around the JSON, no commentary, no keys — just the array.
 
 ===USER===
 Title: {{title}}

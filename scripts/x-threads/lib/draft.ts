@@ -1,6 +1,7 @@
 import path from 'node:path';
 import type { PostMeta, ThreadDoc } from './types.ts';
 import { buildThreadPrompt, parseLlmTweetList } from './prompt.ts';
+import { stripMarkdownToPlain } from './plain-text.ts';
 import { validateThread } from './thread-yaml.ts';
 import { selectEligiblePosts } from './select-posts.ts';
 import { loadPostBody } from './load-post-body.ts';
@@ -16,7 +17,7 @@ export async function draftThread(
     url: input.url,
   });
   const raw = await deps.complete(system, user);
-  const texts = parseLlmTweetList(raw);
+  const texts = parseLlmTweetList(raw).map(stripMarkdownToPlain);
   if (texts[texts.length - 1] !== input.url) {
     texts.push(input.url);
   }

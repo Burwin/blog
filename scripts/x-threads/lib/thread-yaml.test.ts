@@ -83,3 +83,39 @@ test('happy-path fixture ThreadDoc validates with zero issues', () => {
   assert.equal(issues.length, 0);
   assert.deepEqual(issues, []);
 });
+
+const longMultiParaTweet = (() => {
+  const para1 = 'This is a long first paragraph with several sentences. It needs to be long enough to trigger default line wrapping in yaml stringify which is around eighty characters. So here are more words to pad it out past the limit. Another sentence here for good measure.';
+  const para2 = 'Second paragraph is also lengthy. It continues with more text so that the folded style is chosen when there are internal newlines. More padding text to exceed the width: one two three four five six seven eight nine ten.';
+  return para1 + '\n\n' + para2;
+})();
+
+test('serializeThreadYaml has no double blank lines for long multi-paragraph tweets', () => {
+  const doc: ThreadDoc = {
+    slug: 'multi',
+    url: 'https://ex',
+    status: 'draft',
+    tweets: [
+      { text: longMultiParaTweet },
+      { text: 'https://ex' }
+    ]
+  };
+  const yaml = serializeThreadYaml(doc);
+  assert.doesNotMatch(yaml, /\n[ \t]*\n[ \t]*\n/);
+});
+
+test('serializeThreadYaml / parseThreadYaml round-trip preserves long multi-paragraph tweet text', () => {
+  const doc: ThreadDoc = {
+    slug: 'multi',
+    url: 'https://ex',
+    status: 'draft',
+    tweets: [
+      { text: longMultiParaTweet },
+      { text: 'https://ex' }
+    ]
+  };
+  const yaml = serializeThreadYaml(doc);
+  const round = parseThreadYaml(yaml);
+  assert.equal(round.tweets[0].text, longMultiParaTweet);
+  assert.equal(round.tweets[1].text, doc.tweets[1].text);
+});

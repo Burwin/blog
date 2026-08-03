@@ -57,6 +57,33 @@ test('draftThread calls complete(system,user), builds draft ThreadDoc, appends u
   assert.equal(validateThread(doc).length, 0);
 });
 
+test('draftThread strips markdown from LLM tweet texts before validate/write', async () => {
+  const input = {
+    slug: 'separation-of-powers',
+    title: 'Separation of Powers',
+    body: 'Body.',
+    url: 'https://mharris.io/posts/separation-of-powers',
+  };
+
+  const complete = async (_system: string, _user: string): Promise<string> =>
+    JSON.stringify([
+      '- **Legislators**: write laws',
+      'See **TRUST!!**',
+    ]);
+
+  const doc = await draftThread(input, { complete });
+
+  assert.deepEqual(
+    doc.tweets.map((t) => t.text),
+    [
+      '- Legislators: write laws',
+      'See TRUST!!',
+      input.url,
+    ],
+  );
+  assert.equal(validateThread(doc).length, 0);
+});
+
 test('runDraft for one eligible post: load body → draftThread → write; skips null body; returns written paths', async () => {
   const root = mkdtempSync(path.join(tmpdir(), 'run-draft-'));
   const threadsDir = path.join(root, 'threads');
