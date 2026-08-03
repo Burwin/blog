@@ -1,7 +1,7 @@
 slug: separation-of-powers
 url: https://mharris.io/posts/separation-of-powers
 title: Separation of Powers
-status: draft
+status: published
 tweets:
   - text: >-
       I've been playing around with adding a "constitution" to an existing small
@@ -30,4 +30,6 @@ tweets:
       reviewing laws and their implementations for validity and coherence)
 
       - **Engineers**: writes code to implement laws (is this the deep state?)
+    id: "2084378352748462583"
   - text: https://mharris.io/posts/separation-of-powers
+    id: "2084378353872580772"
