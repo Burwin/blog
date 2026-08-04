@@ -6,7 +6,7 @@ export function parseThreadYaml(raw: string): ThreadDoc {
 }
 
 export function serializeThreadYaml(doc: ThreadDoc): string {
-  return stringify(doc);
+  return stringify(doc, { lineWidth: 0 });
 }
 
 export function validateThread(doc: ThreadDoc): string[] {
