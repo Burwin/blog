@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-08-04T12:00:00.000Z",
+    "title": "Refactors and Migrations are Tricky",
+    "description": "The legislative method that's evolving in my head feels promising, but it's far from becoming a turnkey solution... major refactors and data migrations are a glaring red flag",
+    "href": "posts/refactors-and-migrations",
+    "id": "refactors-and-migrations"
+  },
+  {
     "date": "2026-08-03T12:00:00.000Z",
     "title": "Separation of Powers",
     "description": "Adversarial collaboration might work well for AI development when following the CONSTITUTION model",
