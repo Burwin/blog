@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-08-06T12:00:00.000Z",
+    "title": "What about visual stuff?",
+    "description": "It makes sense to write textual specs (rules) for logical requirements, but what about visual requirements?",
+    "href": "posts/what-about-visual-stuff",
+    "id": "what-about-visual-stuff"
+  },
+  {
     "date": "2026-08-05T12:00:00.000Z",
     "title": "Natural Law vs. Constitution vs. Legislation vs. Case Law vs. Regulations",
     "description": "Am I overcomplicating this?",
