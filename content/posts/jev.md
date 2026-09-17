@@ -6,7 +6,7 @@ excerpt: I didn't understand it at first, but it looks incredibly powerful for r
 
 There's probably a better phrase than "roughly-deterministic automated workflow graphs", but I'm trusting you get the gist.
 
-# Within Software Development
+## Within Software Development
 
 I already think that almost ALL of our approaches to just the workflow of _software development_ is still incredibly lazy when it comes to how we use AI, even the most sophisticated ones. I think that software is a product that we can reliably produce with some measured degree of repeatability. It's a very complex product, but it's still more deterministic than what would otherwise look like a creative endeavor. And there are better and worse ways to produce this product (which may vary depending on the circumstances, I admit).
 
@@ -34,7 +34,7 @@ Benefits?
 3. Dramatically faster
 4. Better auditability and control (Jev provides classifications with corresponding confidence scores)
 
-# Outside of Software Development
+## Outside of Software Development
 
 I'm bad at thinking of use cases, but here's a couple off the top of my head from projects I've been working on recently:
 
