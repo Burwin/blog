@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-17T12:00:00.000Z",
+    "title": "Jev looks crazy valuable",
+    "description": "I didn't understand it at first, but it looks incredibly powerful for roughly-deterministic automated workflow graphs",
+    "href": "posts/jev",
+    "id": "jev"
+  },
+  {
     "date": "2026-08-06T12:00:00.000Z",
     "title": "What about visual stuff?",
     "description": "It makes sense to write textual specs (rules) for logical requirements, but what about visual requirements?",
