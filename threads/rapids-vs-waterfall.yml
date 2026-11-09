@@ -1,7 +1,7 @@
 slug: rapids-vs-waterfall
 url: https://mharris.io/posts/rapids-vs-waterfall
 title: Rapids vs. Waterfall
-status: draft
+status: published
 tweets:
   - text: |-
       Lazy river < rapids < waterfalls
@@ -38,4 +38,6 @@ tweets:
       Being able to keep our heads up to see the big picture is useful for safety, to make sure we don’t get stuck in a vortex or fall off a cliff.
 
       Otherwise, safety is especially achieved in teamwork. If we kayak solo, it’s very easy to die if we flip over or hit our heads on a rock. With a team, we look out for each other. That doesn’t mean we won’t get hurt from time to time, but we can dramatically reduce the worst case scenarios.
+    id: "2119908271997812881"
   - text: https://mharris.io/posts/rapids-vs-waterfall
+    id: "2119908273319027176"
