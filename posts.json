@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-11-09T12:00:00.000Z",
+    "title": "Rapids vs. Waterfall",
+    "description": "AI development works best with small, front-loaded plans cooking in parallel, faster than a lazy river and safer than a waterfall.",
+    "href": "posts/rapids-vs-waterfall",
+    "id": "rapids-vs-waterfall"
+  },
+  {
     "date": "2026-09-17T12:00:00.000Z",
     "title": "Jev looks crazy valuable",
     "description": "I didn't understand it at first, but it looks incredibly powerful for roughly-deterministic automated workflow graphs",
