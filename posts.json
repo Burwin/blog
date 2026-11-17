@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-11-17T12:00:00.000Z",
+    "title": "Independently Deployable Tasks",
+    "description": "When you split work into smaller tasks, each one must be independently deployable, or it belongs back in its parent.",
+    "href": "posts/independently-deployable-tasks",
+    "id": "independently-deployable-tasks"
+  },
+  {
     "date": "2026-11-09T12:00:00.000Z",
     "title": "Rapids vs. Waterfall",
     "description": "AI development works best with small, front-loaded plans cooking in parallel, faster than a lazy river and safer than a waterfall.",
