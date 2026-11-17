@@ -1,7 +1,7 @@
 slug: jev
 url: https://mharris.io/posts/jev
 title: Jev looks crazy valuable
-status: draft
+status: published
 tweets:
   - text: |-
       There's probably a better phrase than "roughly-deterministic automated workflow graphs", but I'm trusting you get the gist.
@@ -46,4 +46,6 @@ tweets:
       I'm barely scratching the surface. Efficient, easy to use, affordable, AI classification with confidence scores will be massively valuable, very quickly.
 
       (It's not terribly new conceptually, either, btw... One of my former employees did something very similar for the oil industry before working for me. Jev is generalized, broadened, optimized, and hardened.)
+    id: "2122701630944547147"
   - text: https://mharris.io/posts/jev
+    id: "2122701632634749315"

@@ -1,7 +1,7 @@
 slug: independently-deployable-tasks
 url: https://mharris.io/posts/independently-deployable-tasks
 title: Independently Deployable Tasks
-status: draft
+status: published
 tweets:
   - text: |-
       When breaking up work tasks into smaller tasks, in the context of shipping complex software, the smaller tasks MUST be independently deployable.
@@ -11,4 +11,6 @@ tweets:
       If it’s not independently deployable, it can’t get split off.
 
       If it’s split off and not independently deployable, then it needs to either be modified such that it can be safely deployed by itself, or merged back into the parent task.
+    id: "2122701627287011339"
   - text: https://mharris.io/posts/independently-deployable-tasks
+    id: "2122701628893470756"

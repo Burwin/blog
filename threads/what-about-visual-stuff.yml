@@ -1,7 +1,7 @@
 slug: what-about-visual-stuff
 url: https://mharris.io/posts/what-about-visual-stuff
 title: What about visual stuff?
-status: draft
+status: published
 tweets:
   - text: |-
       If I want to assert that my system calculates loan amortization schedules correctly, I can have a series of rules in my constitution that are textual and logical and perfectly constrain the mathematical side of things.
@@ -28,4 +28,6 @@ tweets:
       Something like this would fit into a constitution-centric iterative workflow quite naturally. Depending on how strict the implemented UI elements must match the pixels of the prototype designs, our pinning mechanism can vary how it verifies the implemented design. Maybe we just have an agent check for "looks about right based on foo-123.png". Maybe we have a full automated test that checks all pixels are in the exact right position. Maybe we check CSS classes.
 
       I'm not a pro UI guru, so I defer to those guys on the specifics of this. What I do know, is that a good-enough system for incorporating some form of UI elements into the constitutional spec-driven flow is definitely possible, and I think would even fit the spirit of being almost joyful to work with for human stakeholders.
+    id: "2122701637730841067"
   - text: https://mharris.io/posts/what-about-visual-stuff
+    id: "2122701639358218475"

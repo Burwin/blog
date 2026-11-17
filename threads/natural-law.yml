@@ -1,7 +1,7 @@
 slug: natural-law
 url: https://mharris.io/posts/natural-law
 title: Natural Law vs. Constitution vs. Legislation vs. Case Law vs. Regulations
-status: draft
+status: published
 tweets:
   - text: |-
       I've been calling this thought process of mine - for defining specs for software and letting the AI do whatever it wants as long as those defined specs are enforced - as constitution. Stuck in this law framework, I wonder if all criteria make sense to be in the application's constitution, or should there be different layers with different properties?
@@ -19,4 +19,6 @@ tweets:
       The entire purpose of this is to make things transparent to the users and primary stakeholders, but mostly the users. But there are other types of constraints that are important to track, especially technical constraints that matter to the engineers. Maybe these go in the regulations category. Or maybe they get a piece of the legislation. These are things like "integration tests should finish in under 5 minutes on CI", which is only important to the engineering team.
 
       Lots of thoughts. Gradually moving toward clarity. Thanks for reading (you're the one!).
+    id: "2122701634383814666"
   - text: https://mharris.io/posts/natural-law
+    id: "2122701635914809794"
